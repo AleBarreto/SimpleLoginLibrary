@@ -31,6 +31,7 @@ public class FacebookSign {
     private InfoLoginFaceCallback mFaceCallback;
 
     public FacebookSign(FragmentActivity mActivity, InfoLoginFaceCallback mFaceCallback) {
+        FacebookSdk.sdkInitialize(mActivity.getApplicationContext());
         this.mActivity = mActivity;
         this.mFaceCallback = mFaceCallback;
         mCallbackManager = CallbackManager.Factory.create();
