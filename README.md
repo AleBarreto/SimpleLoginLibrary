@@ -88,12 +88,25 @@ public class MainActivity extends AppCompatActivity
 4. Copy the google-services.json file you just downloaded into the app/ or mobile/ directory of your Android Studio project.
 
 #### Gradle Dependency
+>Add it in your root build.gradle at the end of repositories:
+
+```
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
+```
+
 > File build.gradle app-level
 
 ```
-apply plugin: 'com.google.gms.google-services' // requisite of Google Services 
+
+//Add the dependency	
+apply plugin: 'com.google.gms.google-services' // requisite of Google Services
 dependencies {
-  compile project(':simpleloginlibrary') // lib to simple login.
+        compile 'com.github.AleBarreto:SimpleLoginLibrary:-SNAPSHOT'
 }
 
 ```
