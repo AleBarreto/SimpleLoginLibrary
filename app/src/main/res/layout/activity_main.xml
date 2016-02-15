@@ -10,7 +10,7 @@
     android:orientation="vertical"
     tools:context="barreto.simplelogin.MainActivity">
 
-
+    <!-- Button simple-->
     <Button
         android:text="Login with Google"
         android:onClick="loginButtonGoogle"
@@ -23,5 +23,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <!-- Button custom-->
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_marginTop="30dp"
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
 
 </LinearLayout>
