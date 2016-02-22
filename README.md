@@ -1,5 +1,7 @@
 #Library to help developers it integrate (Google Sign-in) and (Facebook Sign-in)
 
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-SimpleLoginLibrary-green.svg?style=true)](https://android-arsenal.com/details/1/3177 ) 
+
 It's simple. [EXAMPLE] (https://github.com/AleBarreto/SimpleLoginLibrary/tree/master/app):
 >Login with Facebook:
 
