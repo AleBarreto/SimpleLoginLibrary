@@ -14,9 +14,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        facebookSign = new FacebookSign(this,this); // before setContentView
+        
         setContentView(R.layout.activity_main);
-
-        facebookSign = new FacebookSign(this,this);
     
     }
     
