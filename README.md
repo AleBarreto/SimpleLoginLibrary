@@ -94,10 +94,9 @@ public class MainActivity extends AppCompatActivity
 
 ```
 allprojects {
-	repositories {
-		...
-		maven { url "https://jitpack.io" }
-	}
+    repositories {
+        jcenter()
+    }
 }
 ```
 
@@ -108,7 +107,7 @@ allprojects {
 //Add the dependency	
 apply plugin: 'com.google.gms.google-services' // requisite of Google Services
 dependencies {
-        compile 'com.github.AleBarreto:SimpleLoginLibrary:-SNAPSHOT'
+        compile 'barreto.simplelogin:barreto.simplelogin:1.0'
 }
 
 ```
